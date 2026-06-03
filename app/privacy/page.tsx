@@ -39,8 +39,12 @@ const sections = [
     body: `You can decline optional notifications in your device settings. Questions about access, correction, or deletion requests can be sent to the contact below. Depending on your location, you may have additional privacy rights under local law.`,
   },
   {
-    title: "Children",
-    body: `CloneUrOwn is not directed at children. We do not knowingly collect personal information from children.`,
+    title: "Age requirement",
+    body: `CloneUrOwn is intended for adults 18 years of age or older. We do not knowingly collect personal information from anyone under 18.
+
+When you purchase an eligible product or sign in to CloneUrOwn, we use a third-party age-verification provider to confirm that you meet this requirement. That provider may process information needed to perform verification; their handling of your data is governed by their own privacy policy.
+
+If we learn that we have collected personal information from someone under 18, we will delete that information and close the associated account. If you believe a minor has provided us with personal information, contact us at ${PRIVACY_CONTACT_EMAIL}.`,
   },
   {
     title: "Changes",

@@ -16,7 +16,7 @@ const sections = [
   },
   {
     title: "Eligibility and access",
-    body: `The Service is intended for customers who have placed an order that includes a custom 3D replica workflow. You may need a valid order ID and email address to sign in. You are responsible for keeping your login information accurate and for activity that occurs under your account.`,
+    body: `The Service is intended for adults 18 years of age or older who have placed an order that includes a custom 3D replica workflow. You may need a valid order ID and email address to sign in. We may use a third-party service to verify your age at purchase or before you use the app. You are responsible for keeping your login information accurate and for activity that occurs under your account.`,
   },
   {
     title: "The Service",
