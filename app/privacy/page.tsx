@@ -40,7 +40,7 @@ const sections = [
   },
   {
     title: "Children",
-    body: `CloneUrOwn is not directed at children. The app is rated 18+ on the App Store. We do not knowingly collect personal information from anyone under 18.`,
+    body: `CloneUrOwn is not directed at children. We do not knowingly collect personal information from children.`,
   },
   {
     title: "Changes",
@@ -90,12 +90,6 @@ export default function PrivacyPage() {
               </section>
             ))}
           </div>
-          <p className="mt-14 rounded-2xl border border-muted/15 bg-surface p-6 text-sm text-muted">
-            Apple&apos;s App Store privacy label for CloneUrOwn indicates that the
-            developer does not collect data in Apple&apos;s defined tracking
-            categories. Operational data described above is still processed to
-            fulfill your order and is handled as described in this policy.
-          </p>
         </article>
       </main>
       <SiteFooter />

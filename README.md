@@ -1,67 +1,49 @@
-# Spicy Cantaloupe — Landing Page
+# CloneUrOwn — Marketing Site
 
-Marketing site for [spicycantaloupe.com](https://spicycantaloupe.com): 3D scanning with LiDAR and photogrammetry.
+Landing page for [CloneUrOwn](https://apps.apple.com/ca/app/cloneurown/id6756492557), hosted at [spicycantaloupe.com](https://spicycantaloupe.com).
 
 ## Local preview
 
 ```bash
-cd ~/spicycantaloupe
 npm install
 npm run dev
 ```
 
 Open [http://localhost:3001](http://localhost:3001).
 
-## Fastest way to publish on Vercel
+## Deploy (Vercel)
 
-### Option A — Deploy from this folder (fastest, ~2 minutes)
+1. Import the GitHub repo at [vercel.com/new](https://vercel.com/new).
+2. Framework: **Next.js**. Deploy.
+3. Add `spicycantaloupe.com` under **Settings → Domains**.
 
-1. Install the CLI once: `npm i -g vercel`
-2. From this directory:
-
-```bash
-cd ~/spicycantaloupe
-vercel
-```
-
-3. Accept defaults (creates a new project). For production:
+Or from the CLI:
 
 ```bash
 vercel --prod
 ```
 
-4. In the [Vercel dashboard](https://vercel.com/dashboard) → your project → **Settings → Domains** → add `spicycantaloupe.com` and `www.spicycantaloupe.com`.
-5. At your domain registrar, set DNS as Vercel instructs (usually `A` → `76.76.21.21` and `CNAME` `www` → `cname.vercel-dns.com`).
-
-### Option B — GitHub + auto deploy (best for updates)
-
-1. Create a new repo (or monorepo) containing only the `spicycantaloupe/` folder—or push this folder as the repo root.
-2. [vercel.com/new](https://vercel.com/new) → Import the repo.
-3. Leave **Root Directory** empty (this repo is the app root).
-4. Framework preset: **Next.js**. Deploy.
-5. Add custom domain in project settings.
-
-### Option C — One-click (if you use Vercel’s Git integration)
-
-Push to `main` on a connected repo; every push redeploys automatically.
-
-## Customization checklist
-
-- [ ] Swap waitlist `mailto:` form for [Vercel KV waitlist](https://vercel.com/templates/next.js/waitlist), Formspree, or Resend.
-- [ ] Add App Store / TestFlight links when ready.
-- [ ] Add `app/opengraph-image.png` (1200×630) for social previews.
-- [ ] Point `hello@spicycantaloupe.com` to your inbox.
-
 ## Project structure
 
 ```
-spicycantaloupe/
 ├── app/
-│   ├── globals.css   # Brand tokens (melon, rind, seed)
-│   ├── layout.tsx    # SEO metadata
-│   └── page.tsx      # Landing page
-├── package.json
-└── README.md
+│   ├── page.tsx          # Home
+│   ├── privacy/page.tsx  # Privacy policy
+│   ├── globals.css       # Brand colors & effects
+│   └── layout.tsx        # SEO metadata
+├── components/
+│   ├── animated-logo.tsx
+│   ├── banana-model-viewer.tsx
+│   ├── site-header.tsx
+│   └── site-footer.tsx
+├── public/
+│   ├── clone-ur-own-logo.png
+│   └── models/banana/banana.glb
+└── lib/constants.ts      # App Store URL, privacy email
 ```
 
-Deploy as its own Vercel project (root directory is this folder).
+## Customization
+
+- Replace `public/models/banana/banana.glb` with a customer-approved sample model when available.
+- Update `PRIVACY_CONTACT_EMAIL` in `lib/constants.ts` if needed.
+- Add `app/opengraph-image.png` (1200×630) for richer social previews.

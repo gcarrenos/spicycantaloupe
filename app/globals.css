@@ -51,14 +51,41 @@ body {
   background: var(--color-purple-light);
 }
 
-.btn-success {
-  background: var(--color-green);
-  box-shadow: 0 0 28px rgb(50 215 75 / 0.4);
+.logo-fx {
+  transition: transform 0.35s ease, filter 0.35s ease;
 }
 
-/* White-on-black wordmark: black pixels disappear on dark UI */
-.logo-wordmark {
-  mix-blend-mode: screen;
+.logo-fx:hover {
+  transform: scale(1.04);
+}
+
+.logo-fx-glow-layer {
+  animation: logo-glow-pulse 3.5s ease-in-out infinite;
+}
+
+.logo-fx-shimmer {
+  opacity: 0.45;
+  animation: logo-shimmer-opacity 5s ease-in-out infinite;
+}
+
+@keyframes logo-glow-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes logo-shimmer-opacity {
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.55;
+  }
 }
 
 @keyframes float {
