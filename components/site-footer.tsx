@@ -10,6 +10,10 @@ export function SiteFooter() {
           Privacy
         </Link>
         {" · "}
+        <Link href="/terms" className="transition-colors hover:text-purple-light">
+          Terms
+        </Link>
+        {" · "}
         <a
           href={APP_STORE_URL}
           className="transition-colors hover:text-purple-light"

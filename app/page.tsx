@@ -192,12 +192,19 @@ export default function Home() {
             </h2>
             <p className="mt-4 text-muted">
               Your photos and personal data are encrypted and handled with care
-              throughout capture, model generation, and production. Read our{" "}
+              throughout capture, model generation, and production.               Read our{" "}
               <a
                 href="/privacy"
                 className="text-purple-light underline-offset-2 hover:underline"
               >
                 privacy policy
+              </a>{" "}
+              and{" "}
+              <a
+                href="/terms"
+                className="text-purple-light underline-offset-2 hover:underline"
+              >
+                terms of use
               </a>{" "}
               for details.
             </p>

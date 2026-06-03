@@ -18,6 +18,9 @@ export function SiteHeader() {
         <Link href="/privacy" className="transition-colors hover:text-purple-light">
           Privacy
         </Link>
+        <Link href="/terms" className="transition-colors hover:text-purple-light">
+          Terms
+        </Link>
       </nav>
       <a
         href={APP_STORE_URL}
