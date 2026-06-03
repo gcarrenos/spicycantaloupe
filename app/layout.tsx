@@ -2,22 +2,29 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Spicy Cantaloupe — 3D Scanning with LiDAR & Photogrammetry",
+  title: "CloneUrOwn — 3D Replica Photo Capture",
   description:
-    "Turn anything into a shareable 3D model. Spicy Cantaloupe combines iPhone LiDAR and photogrammetry for fast, accurate captures.",
+    "Transform yourself into a stunning 3D replica with guided photo capture. Review and approve your model in the app.",
   metadataBase: new URL("https://spicycantaloupe.com"),
+  icons: {
+    icon: "/cloneurown-icon.jpg",
+    apple: "/cloneurown-icon.jpg",
+  },
   openGraph: {
-    title: "Spicy Cantaloupe — 3D Scanning App",
+    title: "CloneUrOwn — 3D Replica App",
     description:
-      "LiDAR + photogrammetry in your pocket. Scan objects, spaces, and products in minutes.",
+      "Guided photo scanning, interactive 3D preview, and one-tap approval for your custom replica.",
     url: "https://spicycantaloupe.com",
-    siteName: "Spicy Cantaloupe",
+    siteName: "CloneUrOwn",
     type: "website",
+    images: [{ url: "/cloneurown-icon.jpg", width: 512, height: 512 }],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Spicy Cantaloupe — 3D Scanning App",
-    description: "Create 3D models of anything with LiDAR and photogrammetry.",
+    card: "summary",
+    title: "CloneUrOwn — 3D Replica App",
+    description:
+      "Guided photo capture and 3D model approval on iPhone.",
+    images: ["/cloneurown-icon.jpg"],
   },
 };
 
