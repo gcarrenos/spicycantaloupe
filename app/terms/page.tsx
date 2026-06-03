@@ -60,7 +60,7 @@ const sections = [
   },
   {
     title: "Contact",
-    body: `Questions about these Terms may be sent to the contact below.`,
+    body: `Questions about these Terms may be sent to Spicerack Market, Inc. at ${LEGAL_CONTACT_EMAIL}.`,
   },
 ];
 
