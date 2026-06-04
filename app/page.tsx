@@ -3,7 +3,7 @@ import { AnimatedLogo } from "@/components/animated-logo";
 import { BananaModelViewer } from "@/components/banana-model-viewer";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { APP_STORE_URL } from "@/lib/constants";
+import { APP_STORE_URL, SUPPORT_CONTACT_EMAIL } from "@/lib/constants";
 
 const features = [
   {
@@ -179,6 +179,41 @@ export default function Home() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section
+          id="support"
+          className="border-t border-muted/10 px-6 py-20"
+        >
+          <div className="mx-auto max-w-3xl text-center">
+            <h2
+              className="font-display text-3xl font-bold text-text md:text-4xl"
+              style={{ fontFamily: "var(--font-display)" }}
+            >
+              Need help?
+            </h2>
+            <p className="mt-4 text-lg leading-relaxed text-muted">
+              Questions about sign-in, photo capture, your 3D preview, or your order?
+              Our support team at Spicerack Market, Inc. is ready to assist.
+            </p>
+            <p className="mt-6 text-muted">
+              Email{" "}
+              <a
+                href={`mailto:${SUPPORT_CONTACT_EMAIL}`}
+                className="font-semibold text-purple-light underline-offset-2 hover:underline"
+              >
+                {SUPPORT_CONTACT_EMAIL}
+              </a>{" "}
+              with your order ID and checkout email. We usually reply within 1–2
+              business days.
+            </p>
+            <a
+              href="/support"
+              className="mt-8 inline-flex rounded-full border border-muted/25 bg-surface px-8 py-4 text-base font-semibold text-text transition hover:border-purple/40"
+            >
+              Visit support page
+            </a>
           </div>
         </section>
 

@@ -14,6 +14,10 @@ export function SiteFooter() {
           Terms
         </Link>
         {" · "}
+        <Link href="/support" className="transition-colors hover:text-purple-light">
+          Support
+        </Link>
+        {" · "}
         <a
           href={APP_STORE_URL}
           className="transition-colors hover:text-purple-light"

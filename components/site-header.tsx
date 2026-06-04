@@ -21,6 +21,9 @@ export function SiteHeader() {
         <Link href="/terms" className="transition-colors hover:text-purple-light">
           Terms
         </Link>
+        <Link href="/support" className="transition-colors hover:text-purple-light">
+          Support
+        </Link>
       </nav>
       <a
         href={APP_STORE_URL}
